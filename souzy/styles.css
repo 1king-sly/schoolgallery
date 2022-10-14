@@ -1,0 +1,45 @@
+body,html{
+    overflow-x: hidden;
+}
+
+body{
+    background-color: rgba(231, 191, 10, 0.856);
+    
+}
+.header{
+    background-image: url("souzy.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    margin-top:-80px;
+    margin-left: 0;
+    margin-right: 0;
+    object-fit: contain;
+    width: auto;
+    text-align: center;
+   
+}
+h1{
+    color: green;
+    font-size: 100px;
+
+}
+.second{
+    color: red;
+    font-family: monotype corsiva;
+    font-weight: bolder;
+}
+.third{
+    color: blue;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: orangered;
+}
+img{
+    width: 250px;
+    height: 300px;
+    object-fit: contain;
+    margin-top: 10px;
+}

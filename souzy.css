@@ -17,14 +17,23 @@
     margin-top: 0;
     z-index: 20000;
 }
+p{
+    font-family: monotype corsiva;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
 .header h1{
-    margin-top: 10px;
+    margin-top: 0px;
     position: fixed;
     font-size: 42px;
     justify-content: center;
+    color: powderblue;
 }
 .navbar{
     text-decoration: none;
+    list-style: none;
+    margin-left: 15px;
 }
 ul{
     display: flex;
@@ -35,10 +44,24 @@ ul{
     margin-top: -80px;
     z-index: 20001;
 }
+.btn{
+    margin-top: 18px;
+}
+.btn div{
+    width: 25px;
+    height: 3px;
+    background-color: orange;
+    margin: 3px ;
+}
+.btn:hover{
+    cursor: pointer;
+}
 li{
     text-decoration: none;
     margin: 20px;
     text-decoration-style: none;
+    list-style: none;
+   
 }
 a{
     text-decoration: none;
@@ -56,33 +79,67 @@ a:active{
     text-decoration: underline orangered;
     transition: 0.4s ease-in-out;
 }
-button img{
-    width: 30px;
-    border-radius: 5px;
+ section .row .col{
+    margin-right: 125px;
 }
 
+
+
+button img{
+    width: 30px;
+    height: 10px;
+    border-radius: 5px;
+}
 section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom:-100px;
    
 }
 h1{
     text-align: center;
+    display: flex;
+    justify-content: center;
     font-size: 30px;
     font-family: monotype corsiva;
-    color: powderblue;
+    color: rgb(2, 2, 71);;
     margin-top: 160px;
 }
 .row .col{
     margin: 30px 70px;
     
 }
+
 img{
-    width: 300px;
+    height: 300px;
+    width: 250px;
+   object-fit:cover;
     transition: transform 0.4s ease-in-out;
 }
 img:hover{
     transform: scale(1.1);
     cursor: pointer;
+}
+@media (max-width:335px) {
+    .header{
+        height: 100px;
+        position: fixed;
+    }
+    .header h1{
+        font-size: 20px;
+        text-align: center;
+        margin-left: -150px;
+    }
+    .navbar{
+        margin-top: -20px;
+        margin-left: -5px;
+    }
+    li{
+        margin-right: -15px;
+        font-size: 12px;
+    }
+    .btn{
+        margin-right: -10px;
+    }
 }
